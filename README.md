@@ -38,9 +38,10 @@ Users should be able to:
 
      1. I stored the current status of the question by checking if it had the opened class or not
      2. the question index is stored, to be used in the keyboard navigation, so if the user clicks on any question, he can show / hide its content using the keyboard
-     3. then I used the forEach method to loop over the questions and close them except the clicked one will stay opened
+     3. then I used the forEach method to loop over the questions and close them by removing the opened class
+     4. finally, when user click on any question, the opened class will be added to the clicked one
 
   7. in the keyup event,
      1. the focused question is styled differenetly by applying border
      2. I used the enter key to show / hide the question's content. this is done by checking the value of the isOpened flag which checks if the opened class is present or not
-     3. the user can navigate between questions using the arrowUp / arrowDown. this is done by changing the value of the qestion index.
+     3. the user can navigate between questions using the arrowUp / arrowDown. this is done by changing the value of the qestion index, and changing the current active question depending on this index.
