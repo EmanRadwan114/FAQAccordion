@@ -1,0 +1,138 @@
+/* start of general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "work-sans";
+  src: url(../assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "work-sans";
+  src: url(../assets/fonts/static/WorkSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "work-sans";
+  src: url(../assets/fonts/static/WorkSans-Bold.ttf);
+  font-weight: 800;
+}
+
+:root {
+  --White: rgb(255, 255, 255);
+  --LightPink: rgb(249, 240, 255);
+  --GrayishPurple: rgb(140, 105, 145);
+  --DarkPurple: rgb(47, 21, 51);
+  --purple: rgb(173, 40, 235);
+  font-family: "work-sans";
+}
+/* end of general styles */
+
+/* start of common styles */
+.mb {
+  margin-bottom: 1.5rem;
+}
+
+.pt {
+  padding-top: 1.5rem;
+}
+
+.padding {
+  padding: 1rem 0;
+}
+
+h2.question,
+.mainHeader {
+  color: var(--DarkPurple);
+}
+
+h2.question ~ img,
+h2.question {
+  cursor: pointer;
+}
+/* start of common styles */
+
+/* start of main section */
+main#mainSec {
+  min-height: 100vh;
+  background-color: var(--LightPink);
+}
+
+.upperSec {
+  background-image: url(../assets/images/background-pattern-desktop.svg);
+  min-height: 40vh;
+}
+
+.mainContent {
+  width: 45%;
+  margin: auto;
+  transform: translateY(-25%);
+  background-color: var(--White);
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0px 3px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.mainContent img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0.5rem;
+}
+
+.mainHeader {
+  font-size: calc(2rem + 0.7vw);
+  font-weight: 800;
+}
+
+h2.question {
+  width: 85%;
+  font-size: calc(1rem + 0.3vw);
+  font-weight: 600;
+  transition: color 500ms;
+}
+
+h2.question:hover {
+  color: var(--purple);
+}
+
+.answer {
+  color: var(--GrayishPurple);
+}
+
+.questionBox {
+  border-bottom: 1px solid var(--LightPink);
+}
+
+.answerBox {
+  max-height: 0;
+  transition: max-height 800ms;
+  overflow: hidden;
+}
+
+.opened {
+  max-height: 20vh;
+}
+
+.border {
+  border: dashed 3px var(--DarkPurple);
+}
+
+/* end of main section */
+
+/* start of media query */
+@media screen and (max-width: 992px) {
+  .mainContent {
+    width: 90%;
+  }
+}
+/* end of media query */
