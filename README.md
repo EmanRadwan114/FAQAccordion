@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/EmanRadwan114/FAQAccordion)
-- Live Site URL: (https://emanradwan114.github.io/FAQAccordion/)
+- Solution URL: [Solution Link](https://www.frontendmentor.io/solutions/faq-accordion-using-css-and-js--ppJ2ULBVN)
+- Live Site URL: [Live Demo Link](https://emanradwan114.github.io/FAQAccordion/)
 
 ### Built with
 
